@@ -96,9 +96,9 @@ bool acceptWord(Automaton fa, const char word[]) {
 int main() {
     std::vector<std::string> acceptedWords;
 
-    Automaton automaton = readAutomatonFile("/Users/kcherechecha/CLionProjects/untitled25/finite_automata2.txt");
+    Automaton automaton = readAutomatonFile("/Users/kcherechecha/CLionProjects/untitled25/automata3.txt");
 
-    std::ifstream inputFile("/Users/kcherechecha/CLionProjects/untitled25/words.txt");
+    std::ifstream inputFile("/Users/kcherechecha/CLionProjects/untitled25/words3.txt");
 
     if (!inputFile.is_open() || inputFile.peek() == std::ifstream::traits_type::eof()) {
         std::cerr << "Не вдалося відкрити файл зі словами\n";
